@@ -12,9 +12,9 @@ public class Main extends Application {
 
     @Override
     public void start(Stage escenarioPrincipal) throws IOException {
-        Parent raiz = FXMLLoader.load(getClass().getResource("/vistas/VentanaPrincipal.fxml"));
+        Parent raiz = FXMLLoader.load(getClass().getResource("/vistas/QueBotonHaSidoPulsado.fxml"));
         Scene escena = new Scene(raiz);
-        escenarioPrincipal.setTitle("Hola mundo desde JavaFX");
+        escenarioPrincipal.setTitle("¿Qué botón has pulsado?");
         escenarioPrincipal.setScene(escena);
         escenarioPrincipal.show();
     }
