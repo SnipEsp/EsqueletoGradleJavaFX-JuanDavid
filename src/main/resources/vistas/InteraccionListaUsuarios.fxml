@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.javafx.controladores.InteraccionListaUsuarios">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="Elige un usuario:">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="Opción elegida:">
+               <HBox.margin>
+                  <Insets left="160.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="203.0" prefWidth="604.0">
+         <children>
+            <ListView fx:id="lvLista" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="200.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </ListView>
+            <Label fx:id="lbEtiqueta" text="Aquí se mostrará la opción elegida">
+               <HBox.margin>
+                  <Insets left="80.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
