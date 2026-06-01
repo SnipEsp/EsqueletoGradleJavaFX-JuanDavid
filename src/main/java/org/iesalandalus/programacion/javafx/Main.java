@@ -7,16 +7,14 @@ import org.iesalandalus.programacion.javafx.utilidades.Controladores;
 
 public class Main extends Application {
 
-	@Override
-	public void start(Stage escenarioPrincipal) {
-		Controlador ventanaPrincipal = Controladores.get("/vistas/HolaMundo.fxml", "Hola mundo desde JavaFX", null);
-		ventanaPrincipal.addHojaEstilos("/estilos/aplicacion.css");
-		ventanaPrincipal.addIcono("/imagenes/iconoSaludar.png");
-		ventanaPrincipal.getEscenario().show();
-	}
+    @Override
+    public void start(Stage escenarioPrincipal) {
+        Controlador ventanaPrincipal = Controladores.get("/vistas/InteraccionLista.fxml", "Elige la opción", null);
+        ventanaPrincipal.getEscenario().show();
+    }
 
 
-	public static void main(String[] args) {
-		launch(args);
-	}
+    public static void main(String[] args) {
+        launch(args);
+    }
 }
