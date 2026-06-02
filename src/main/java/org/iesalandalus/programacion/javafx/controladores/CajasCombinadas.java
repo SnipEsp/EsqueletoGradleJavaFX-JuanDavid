@@ -20,10 +20,12 @@ public class CajasCombinadas extends Controlador {
         cbEleccion.getSelectionModel().selectedItemProperty().addListener((obs, oldV, newV) -> {
             cambiarTexto();
         });
+
     }
 
     void cambiarTexto() {
         lbMostrar.setText("Has seleccionado: " + cbEleccion.getValue() + " como extra.");
     }
+
 
 }
