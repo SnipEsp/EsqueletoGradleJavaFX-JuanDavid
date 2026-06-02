@@ -3,7 +3,6 @@ package org.iesalandalus.programacion.javafx.controladores;
 public class Usuario {
     private String nombre;
     private String dni;
-    private String contrasenya;
 
 
     public Usuario(String nombre, String dni) {
